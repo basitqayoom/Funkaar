@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="rabab.css">
+    <!-- jQuery Lib LINK -->
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    
+    
+    <title>FunKaar-Mobile Version</title>
+    <!-- add icon link -->
+    <link rel="icon" href="gallery/titleIcon.png" type="image/x-icon">
+    <!-- Icon Link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<script type="text/javascript" src="paper-full.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.js"></script>
+<link rel="stylesheet" type="text/css" href="circles.css">
+<script type="text/paperscript" canvas="myCanvas">
+	var keyData = [
+		{
+			sound: new Howl({
+				src: ['sounds/.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Bella Ciao 001.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Bella Ciao 002.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Bella Ciao 003.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Bella Ciao 004.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Tuj Mein_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Tuj Mein_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Tuj Mein_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Tuj Mein_3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Janatia kashmir_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Janatia kashmir_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Janatia kashmir_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Janatia kashmir_3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/ert 1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/ert 2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/ert 3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/ert 4.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music D_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music D_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music D_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music D_3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/GOT 1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/GOT 2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/GOT 3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/GOT 4.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music A_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music A_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music A_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music A_3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music B_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music B_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music B_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music C_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music C_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Music C_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/havana 001.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/havana 002.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/havana 003.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/havana 004.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Shape of you Rubab_0.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Shape of you Rubab_1.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Shape of you Rubab_2.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Shape of you Rubab_3.mp3']
+			})
+			
+		},
+		{
+			sound: new Howl({
+				src: ['sounds/Shape of you Rubab_4.mp3']
+			})
+			
+		}
+	]
+
+
+	var circles =[];  
+	        var tag = document.querySelector("canvas");
+			var i = 0; 
+	        tag.addEventListener("click",function playMusic(){
+			i++;
+			if(i<keyData.length){
+			var maxPoint = new Point(view.size.width, view.size.height);
+		    var randomPoint = Point.random();
+		    var point = maxPoint * randomPoint;
+		    var newCircle = new Path.Circle(point, 200);
+		    var randomNumber = Math.floor(Math.random() * 27);
+			newCircle.fillColor = Color.random()
+			keyData[i-1].sound.stop();
+			keyData[i].sound.play();
+			console.log(i)
+			circles.push(newCircle);;
+			}else{
+				keyData[i-1].sound.stop();
+				i=0;
+			}
+            })
+  
+  	
+
+	function onFrame(event) {
+		for(var i = 0; i < circles.length; i++){
+			circles[i].scale(.9);
+			circles[i].fillColor.hue += 1;
+			if(circles[i].area < 1){
+				circles[i].remove();
+				circles.splice(i, 1);
+				i--;
+        // console.log(circles);
+      }
+    }
+  }
+</script>
+
+<body class="wrapper">
+    <!-- NAV BAR CODE -->
+    
+    <nav class="navbar navbar-light" style="height: 0px;">
+        <span class="d-lg-block d-none"><a class="navbar-brand" id="brand">FunKaar</a></span>
+        <button style="outline: none;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../About/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Instruments
+                    </a>
+    
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: transparent; border: none;">
+						<a class="dropdown-item myLink" style="background-color: transparent;" href="../Rabab/rabab.html">Rabab &emsp13;<i
+								class="fa fa-mobile" aria-hidden="true"></i></a>
+						<a class="dropdown-item myLink" style="background-color: transparent;" href="../Rabab/rabab-pc-notMobile.html">Rabab
+							&emsp13;<i class="fa fa-desktop" aria-hidden="true"></i></a>
+					</div>
+                </li>
+            </ul>
+        </div>
+	</nav>
+	
+	<canvas id="myCanvas" resize></canvas>
+    <section id="copyright">Copyright ©2020 All rights reserved</section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+		<script src="rabab.js"></script>
+</body>
+</html>
